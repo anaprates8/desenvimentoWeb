@@ -1,11 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desenvolvimento Web</title>
+    <title>Portfólio Ana Prates</title>
 </head>
 <body>
+    <header id="home">
+        <h1>Ana Paula Prates</h1>
+        <h3>Desenvolvedora FullStack.</h3>
+        </header>
+
+    <nav>
+        <ul> 
+            <li><a href="#sobre-mim">Sobre mim</a></li>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contato">Contato</a></li>
+           <ul>
+    </nav>
+
     
+
+    <section id="sobre-mim">
+        <h2>Sobre Mim</h2>
+        <p>Apaixonada por tecnologia e inovação.<br>
+        Minha jornada na programação começou há um ano, movida pela curiosidade e pela vontade de entender como as coisas funcionam no mundo digital.<br>
+        Desde então, tenho me dedicado a aprender continuamente e a expandir minhas habilidades em diferentes tecnologias.</p>
+        <p>Estou sempre em busca de novos desafios que me permitam crescer tanto pessoal quanto profissionalmente. <br>
+        Acredito que o aprendizado é um processo contínuo, e pretendo me aprimorar cada vez mais, buscando sempre a excelência no desenvolvimento de soluções tecnológicas.</p>
+    </section>
+
+    <section id="formacao">
+        <h2>Formação</h2>
+        <p>Atualmente, estou cursando Análise e Desenvolvimento de Sistemas no Centro Universitário Uninter e concluí a formação técnica em Desenvolvimento de Sistemas Fullstack no SENAI.<br>
+        Durante essa formação, adquiri conhecimentos em JavaScript e trabalhei com frameworks como React, Bootstrap e Express, além de desenvolver aplicações back-end com Node.js <br>
+        e utilizar o banco de dados PostgreSQL.</p>
+    
+        <p>Paralelamente, atuo como consultora documental, o que me permitiu aprimorar minhas habilidades em gerenciamento de processos, trabalho em equipe e organização, agregando valor ao meu perfil técnico.</p>
+    </section>
+    
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+        <div>
+            <h3>Projeto em Equipe - Pharmacy Central System API</h3>
+            <p>O Pharmacy Central System API é uma solução para gerenciamento de usuários, medicamentos e vendas.<br>
+            Desenvolvida em JavaScript com Express.js, a API utiliza PostgreSQL e Sequelize para o gerenciamento de dados. <br>
+            Todos os endpoints são protegidos por token JWT, com exceção do cadastro e login de usuários.</p>
+            <p>Você pode visualizar o projeto no Vercel através do link: <a href="https://m3-p-front-end-squad4.vercel.app/" target="_blank">Pharmacy Central System API no Vercel</a>.</p>
+            <p>Para mais detalhes sobre os endpoints, acesse a documentação em <a href="https://pcs-api-56ex.onrender.com/api-docs" target="_blank">https://pcs-api-56ex.onrender.com/api-docs</a> ou execute localmente em <a href="http://localhost:3333/api-docs/" target="_blank">http://localhost:3333/api-docs/</a>.</p>
+            <p>Veja o código no GitHub: <a href="https://github.com/FullStack-Itaguacu/M3P-BackEnd-Squad4" target="_blank">Pharmacy Central System API</a></p>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+          <ul> 
+                <li><a href="https://www.linkedin.com/in/anapaulafprates/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/anaprates8" target="_blank">GitHub</a></li>
+            </ul>
+
+            <form id="contact-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="description">Descrição:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+    
+                <button type="submit">Enviar</button>
+                <p id="success-message">Formulário enviado com sucesso!</p>
+            </form>
+        </section>
+    
+        <script>
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Impede o envio real do formulário
+    
+                // Simula o envio do formulário
+                setTimeout(function() {
+                    // Limpa os campos do formulário
+                    document.getElementById('name').value = '';
+                    document.getElementById('email').value = '';
+                    document.getElementById('description').value = '';
+    
+                    // Exibe a mensagem de sucesso
+                    var successMessage = document.getElementById('success-message');
+                    successMessage.style.display = 'block';
+    
+                    // Oculta a mensagem de sucesso após 3 segundos
+                    setTimeout(function() {
+                        successMessage.style.display = 'none';
+                    }, 3000);
+                }, 1000); // Simula um atraso de 1 segundo para o envio
+            });
+        </script>
+    </body>
+    </html>
+    </section>
 </body>
 </html>

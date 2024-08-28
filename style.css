@@ -1,0 +1,234 @@
+/* Define que todos os elementos terão margem e padding zerados, 
+   além de aplicar o box-sizing para incluir padding e borda no tamanho total */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estiliza a barra de navegação */
+nav {
+  background-color: #01426c; /* Cor de fundo para a barra de navegação */
+  padding: 10px 20px; /* Ajuste o padding conforme necessário */
+}
+
+/* Estiliza a lista dentro da barra de navegação */
+nav ul {
+  list-style: none; /* Remove os marcadores da lista */
+  display: flex; /* Exibe os itens da lista em linha */
+  justify-content: center;
+  gap: 100px; /* Espaço entre os itens da lista */
+}
+
+/* Estiliza os itens da lista dentro da barra de navegação */
+nav ul li {
+  display: inline; /* Exibe os itens da lista em linha */
+}
+
+/* Estiliza os links da barra de navegação */
+nav a {
+  color: #de9fa5; /* Cor do texto dos links */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  font-family: Arial, sans-serif; /* Fonte dos links */
+  font-size: 16px; /* Tamanho da fonte dos links */
+}
+
+/* Adiciona um efeito de sublinhado nos links quando o mouse está sobre eles */
+nav a:hover {
+  text-decoration: underline; /* Sublinha o link quando o mouse está sobre ele */
+}
+
+/* Estiliza a seção home */
+.home {
+  background-color: #023a5f; /* Cor base do tecido */
+  height: 600px; /* Ajuste a altura conforme necessário */
+  color: #de9fa5; /* Ajuste a cor do texto para contraste */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Alinha os itens no centro do eixo principal */
+  align-items: center; /* Alinha os itens no centro do eixo transversal */
+  text-align: center; /* Centraliza o texto dentro do home */
+}
+
+/* Estiliza a seção sobre mim */
+#sobre-mim {
+  background-color: #f8eef2;
+  height: 500px;
+  padding: 30px;
+}
+
+/* Estiliza a seção formação */
+#formacao {
+  background-color: #f5f1f167;
+  height: 500px;
+  padding: 30px;
+}
+
+/* Estiliza a seção portfólio */
+#portfolio {
+  background-color: #f8eef2;
+  height: 500px;
+  padding: 20px;
+}
+
+/* Estiliza os links dentro da seção portfólio */
+#portfolio a {
+  color: #de9fa5;
+  font-size: 20px;
+  align-items: flex-end;
+}
+
+/* Define o layout da seção portfólio */
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estiliza o texto dentro da seção portfólio */
+.portfolio-text {
+  flex: 1; /* O texto ocupará o espaço restante */
+  text-align: justify; /* Distribui o texto de forma justificada */
+  padding: 15px;
+  color: #023a5f;
+  max-width: 55rem; /* Define uma largura máxima para o parágrafo */
+}
+
+/* Estiliza a imagem dentro da seção portfólio */
+.portfolio-image img {
+  max-width: 600px; /* Ajuste o tamanho máximo da imagem conforme necessário */
+  height: auto;
+  border-radius: 8px; /* Bordas arredondadas para a imagem */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para a imagem */
+}
+
+/* Estiliza a seção de contato */
+#contato {
+  background-color: #f5f1f167; 
+  padding: 5px; /* Espaçamento interno */
+}
+
+/* Estiliza os links de redes sociais na seção de contato */
+.social-links {
+  display: flex; /* Define um layout flexível */
+  justify-content: center;
+  gap: 20px; /* Espaçamento entre os ícones */
+  margin-bottom: 20px; /* Espaçamento abaixo dos ícones */
+}
+
+/* Estiliza os links de redes sociais */
+.social-links a {
+  color: #de9fa5;
+  font-size: 30px; /* Define o tamanho dos ícones */
+  transition: color 0.3s; /* Adiciona uma transição suave na mudança de cor */
+}
+
+/* Altera a cor dos ícones ao passar o mouse */
+.social-links a:hover {
+  color: #01426c;
+}
+
+/* Estiliza o formulário de contato */
+#contact-form {
+  max-width: 700px; /* Define a largura máxima do formulário */
+  margin: 50px auto; /* Centraliza o formulário e define o espaço superior */
+  background-color: #ffffff; 
+  padding: 30px; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+}
+
+/* Estiliza os labels do formulário */
+#contact-form label {
+  display: block; /* O label ocupa uma linha inteira */
+  margin-bottom: 8px; /* Define o espaço abaixo do label */
+  font-size: 18px; 
+  color: #023a5f; 
+}
+
+/* Estiliza os inputs e textarea do formulário */
+#contact-form input,
+#contact-form textarea {
+  width: 100%; /* Define a largura total dos inputs e textarea */
+  padding: 10px; 
+  margin-bottom: 15px; /* Define o espaço abaixo dos inputs e textarea */
+  border: 1px solid #de9fa5; /* Define a borda dos inputs e textarea */
+  border-radius: 4px; /* Arredonda as bordas */
+  font-size: 16px; 
+  color: #044a79; 
+}
+
+/* Estiliza o botão de envio do formulário */
+#contact-form button {
+  background-color: #023a5f; 
+  color: #ffffff; /* Define a cor do texto do botão */
+  border: none; /* Remove a borda padrão */
+  padding: 10px 20px; /* Define o espaçamento interno */
+  border-radius: 4px; /* Arredonda as bordas do botão */
+  font-size: 16px; /* Define o tamanho da fonte do botão */
+  cursor: pointer; /* Define o cursor como indicador de botão clicável */
+  transition: background-color 0.1s; /* Adiciona uma transição suave na cor de fundo */
+}
+
+/* Altera a cor de fundo do botão ao passar o mouse */
+#contact-form button:hover {
+  background-color: #01426c;
+}
+
+/* Estiliza a mensagem de sucesso no envio do formulário */
+#success-message {
+  display: none; /* Inicialmente oculta a mensagem de sucesso */
+  color: #4caf50; /* Define a cor da mensagem de sucesso */
+  font-size: 16px;
+  margin-top: 20px; /* Define o espaço acima da mensagem */
+}
+
+/* Estiliza parágrafos */
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  text-align: justify;
+  padding: 15px;
+  color: #023a5f;
+  max-width: 90rem; /* Define uma largura máxima para o parágrafo */
+  margin: 0 auto; /* Centraliza o parágrafo na página */
+  line-height: 1.6; /* Aumenta o espaçamento entre as linhas */
+}
+
+/* Estiliza os títulos h1 */
+h1 {
+  font-size: 70px; /* Define o tamanho da fonte */
+  font-family: Georgia, "Times New Roman", Times, serif; /* Define a fonte */
+  margin-top: 0px; /* Remove a margem superior */
+  text-shadow: 1px 1px 2px rgba(175, 121, 126, 0.5); /* Adiciona uma sombra suave ao texto */
+}
+
+/* Estiliza os títulos h2 */
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif; 
+  font-size: 25px; /* Define o tamanho da fonte */
+  text-align: center; /* Centraliza o texto */
+  color: #023a5f; 
+}
+
+/* Estiliza os títulos h3 */
+h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif; /* Define a fonte */
+  font-size: 30px; /* Define o tamanho da fonte */
+}
+
+h4 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande"; 
+  font-size: 18px; 
+  text-align: center; /* Centraliza o texto */
+  color: #427597; 
+}
+
+/* Estiliza as linhas horizontais */
+hr {
+  border: none; /* Remove a borda padrão */
+  border-top: 1px solid #de9fa5; /* Adiciona uma linha simples */
+  margin: 10px auto; /* Centraliza a linha */
+  width: 100px; /* Define a largura da linha */
+}
